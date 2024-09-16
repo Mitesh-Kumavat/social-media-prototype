@@ -8,7 +8,13 @@ export default function Form() {
     const postTitle = useRef("");
     const postBody = useRef("");
     const tags = useRef("");
-    const reactions = Math.floor(Math.random()*1000 + 1);
+    const likes = Math.floor(Math.random()*1000 + 1);
+    const views = Math.floor(Math.random()*7000 + 1);
+    const dislikes = Math.floor(Math.random()*100 + 1);
+    const reactions= {
+        likes: likes,
+        dislikes: dislikes
+    };
 
     const {addPost} = useContext(PostList);
     const handleSubmit = (e) => {
@@ -18,7 +24,7 @@ export default function Form() {
         const title = postTitle.current.value;
         const body = postBody.current.value;
         const tags2 = tags.current.value.trim().split(' ');
-        addPost(uid , title , body , tags2 , reactions); 
+        addPost(uid , title , body , tags2 , reactions , views); 
         userId.current.value = "";
         postTitle.current.value = "";
         postBody.current.value = "";

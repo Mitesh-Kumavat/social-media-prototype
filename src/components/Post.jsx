@@ -4,12 +4,12 @@ import {PostList} from '../store/post-list-store'
 function Post({post}) {
   const {deletePost} = useContext(PostList);
   return (
-    <article className="max-sm:max-w-[85%] relative m-auto mt-6 rounded-xl border-2 border-gray-100 bg-white max-w-sm ">
+    <article className="max-sm:max-w-[70%] relative m-auto mt-6 rounded-xl border-2 border-gray-100 bg-white max-w-sm ">
     <div className="flex items-start gap-4 p-4 sm:p-6 lg:p-8">
       <div>
         <h3 className="font-medium sm:text-lg ">
           <a href="#" className="hover:underline"> {post.title}<span className="absolute top-0.5 right-0.5 grid min-h-[24px] min-w-[24px] translate-x-2/4 -translate-y-2/4 place-items-center rounded-full bg-violet-500 py-1 px-1 text-xs text-white">
-          ❤️{post.reactions}
+          ❤️{post.reactions.likes}, 👎{post.reactions.dislikes}
           </span> </a>
         </h3>
   
@@ -20,8 +20,12 @@ function Post({post}) {
         <div className="mt-2 sm:flex sm:items-center sm:gap-2">
            
           <p className="hidden sm:block sm:text-xs sm:text-gray-500">
-            Posted by
-            <a href="#" className="font-medium underline hover:text-gray-700"> {post.userId} </a>
+            Posted by User-id : 
+            <a href="#" className="font-medium underline hover:text-gray-700"> {post.userId} , </a>
+          </p>  
+          <p className="hidden sm:block sm:text-xs sm:text-gray-500">
+            views : 
+            <a href="#" className="font-medium underline hover:text-gray-700"> {post.views} </a>
           </p>
          
         </div>
@@ -36,6 +40,15 @@ function Post({post}) {
       </div>
     </div>
 
+{/*     
+        //
+        //     "reactions": {
+        //         "likes": 192,
+        //         "dislikes": 25
+        //     },
+        //     "views": 305,
+        //     "userId": 121
+        // }, */}
 
     <div className="flex justify-end ">
       <strong
