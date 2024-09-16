@@ -65,7 +65,7 @@ export default function Form() {
                             </label>
                             <input
                                 ref={postTitle}
-                                placeholder="How are you felling today ?"
+                                placeholder="Title of Post"
                                 id="title"
                                 type="text"
                                 required
@@ -92,7 +92,7 @@ export default function Form() {
                             </label>
                             <input
                                 ref={tags}
-                                placeholder="mood , fellings , chill"
+                                placeholder="mood fellings chill"
                                 id="hashtags"
                                 type="text"
                                 required
