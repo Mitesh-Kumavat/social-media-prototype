@@ -25,9 +25,9 @@ export default function Navbar({selectedTab , setSelectedTab })  {
                 <div className="flex items-center justify-between py-5 md:block">
                     <a href="javascript:void(0)">
                         <img
-                            src="https://www.floatui.com/logo.svg"
-                            width={120}
-                            height={50}
+                            src="https://th.bing.com/th/id/R.19f5f29c6a28d0b6faf21c6547830108?rik=WpcNqRxvtlp2Ng&riu=http%3a%2f%2fpngimg.com%2fuploads%2fletter_m%2fletter_m_PNG79.png&ehk=b%2bISFrQ2pA7yig362NjbR%2fDFttvb9VOT5TlupdJB0K4%3d&risl=&pid=ImgRaw&r=0"
+                            width={40}
+                            height={15}
                             alt="Float UI logo"
                         />
                     </a>

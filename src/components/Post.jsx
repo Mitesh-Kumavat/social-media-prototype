@@ -4,7 +4,7 @@ import {PostList} from '../store/post-list-store'
 function Post({post}) {
   const {deletePost} = useContext(PostList);
   return (
-    <article className="max-sm:max-w-[70%] relative m-auto mt-6 rounded-xl border-2 border-gray-100 bg-white max-w-sm ">
+    <article className="max-sm:max-w-[78%] max-sm:ml-[23px] relative m-auto mt-6 rounded-xl border-2 border-gray-100 bg-white max-w-sm ">
     <div className="flex items-start gap-4 p-4 sm:p-6 lg:p-8">
       <div>
         <h3 className="font-medium sm:text-lg ">
