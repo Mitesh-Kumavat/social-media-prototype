@@ -19,13 +19,13 @@ function Post({post}) {
   
         <div className="mt-2 sm:flex sm:items-center sm:gap-2">
            
-          <p className="hidden sm:block sm:text-xs sm:text-gray-500">
-            Posted by User-id : 
-            <a href="#" className="font-medium underline hover:text-gray-700"> {post.userId} , </a>
+          <p className="text-sm text-gray-500 sm:block sm:text-xs sm:text-gray-500">
+            Posted by User-id :   
+            <a href="#" className="max-sm:text-xs font-medium hover:text-gray-800"> {post.userId} </a>
           </p>  
-          <p className="hidden sm:block sm:text-xs sm:text-gray-500">
+          <p className="text-sm sm:block text-gray-500 sm:text-xs sm:text-gray-500">
             views : 
-            <a href="#" className="font-medium underline hover:text-gray-700"> {post.views} </a>
+            <a href="#" className="max-sm:text-xs font-medium hover:text-gray-800"> {post.views}</a>
           </p>
          
         </div>
