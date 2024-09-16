@@ -3,7 +3,7 @@ import React from "react";
 export default function Spinner() {
   return (
     <section className="bg-white py-20 dark:bg-dark flex justify-center items-center">
-      <div className="container flex justify-center items-center mt-16 mb-9">
+      <div className="container flex justify-center items-center mt-16 mb-24">
         <div className="flex flex-wrap items-center gap-4">
           <div>
             <svg
