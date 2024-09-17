@@ -66,8 +66,4 @@ const postListReducer = (currentPostList, action) => {
     );
 };
 
-const DEFAULT_POST_LIST = [
-
-]
-
 export default PostListProvider;

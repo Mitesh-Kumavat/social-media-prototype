@@ -1,6 +1,7 @@
 import { useContext, useRef, useState } from "react"
 import PostListProvider, { PostList } from "../store/post-list-store";
 import Alert from "./Alert";
+import { useNavigate } from "react-router-dom";
 
 export default function Form() {
 
@@ -16,10 +17,11 @@ export default function Form() {
         dislikes: dislikes
     };
 
+    const navigateTo = useNavigate();
+
     const {addPost} = useContext(PostList);
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert('New post has been added')
         const uid = userId.current.value;
         const title = postTitle.current.value;
         const body = postBody.current.value;
@@ -29,6 +31,7 @@ export default function Form() {
         postTitle.current.value = "";
         postBody.current.value = "";
         tags.current.value = "";
+        navigateTo('/');
     }
 
     return (

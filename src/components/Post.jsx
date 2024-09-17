@@ -13,7 +13,7 @@ function Post({post}) {
           </span> </a>
         </h3>
   
-        <p className="line-clamp-2 text-sm text-gray-700">
+        <p className=" text-sm text-gray-700">
           {post.body}
         </p>
   
